@@ -1,6 +1,6 @@
 :root {
   /* Fonts */
-  --main-font-family: 'Roboto', sans-serif;
+  --main-font-family: "Roboto", sans-serif;
 
   /* Colors */
   --main-color: #212121;
@@ -14,7 +14,7 @@
   --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
   --header-border: #ececec;
   --Complementary-2-color: #000000;
-  --border-box-Gallery: #eeeeee;
+  --border-box-gallery: #eeeeee;
   --hero-section: #c4c4c4;
   --icon-social-network: #afb1b8;
   --futer-social-network: rgba(255, 255, 255, 0.1);
@@ -124,7 +124,7 @@ li {
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--main-color);
 }
 
@@ -136,7 +136,7 @@ li {
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--current-color);
   margin-right: 93px;
   padding-top: 24px;
@@ -158,9 +158,9 @@ li {
   margin: -1px;
 }
 
-/* Heder info  */
+/* Header info  */
 
-.heder-info {
+.header-info {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -173,12 +173,12 @@ li {
   /* padding для кликабельности */
 }
 
-.heder-info:hover,
-.heder-info:focus {
+.header-info:hover,
+.header-info:focus {
   color: var(--current-color);
 }
 
-.heder-info-icon {
+.header-info-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -229,7 +229,7 @@ li {
 }
 
 .hero-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -366,8 +366,8 @@ li {
 .button:focus {
   background-color: var(--current-color);
   color: var(--main-light-color);
-  box-shadow: 0px 1px 1px var(--article-gallery-12), 0px 4px 4px var(--article-gallery-06),
-    1px 4px 6px var(--article-gallery-16);
+  box-shadow: 0px 1px 1px var(--article-gallery-12),
+    0px 4px 4px var(--article-gallery-06), 1px 4px 6px var(--article-gallery-16);
 }
 
 .button-section {
@@ -384,14 +384,14 @@ li {
   margin-bottom: 50px;
 }
 
-.Gallery {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.Gallery-box {
+.gallery-box {
   padding: 20px 24px;
   border-bottom-width: 1px;
   border-right-width: 1px;
@@ -399,9 +399,9 @@ li {
   border-bottom-style: solid;
   border-right-style: solid;
   border-left-style: solid;
-  border-bottom-color: var(--border-box-Gallery);
-  border-right-color: var(--border-box-Gallery);
-  border-left-color: var(--border-box-Gallery);
+  border-bottom-color: var(--border-box-gallery);
+  border-right-color: var(--border-box-gallery);
+  border-left-color: var(--border-box-gallery);
 }
 
 /* Ховер и фокус карточек на Портфолио */
@@ -409,13 +409,13 @@ li {
 .gallery-link:hover,
 .gallery-link:focus {
   display: block;
-  box-shadow: 0px 1px 1px var(--article-gallery-12), 0px 4px 4px var(--article-gallery-06),
-    1px 4px 6px var(--article-gallery-16);
+  box-shadow: 0px 1px 1px var(--article-gallery-12),
+    0px 4px 4px var(--article-gallery-06), 1px 4px 6px var(--article-gallery-16);
 }
 
 /* Текст кнопок */
 
-.Gallery-text {
+.gallery-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -423,8 +423,8 @@ li {
 
 /* Делает цвет синий в статическом состоянии */
 
-.caren-studio,
-.caren-portfolio {
+.current-studio,
+.current-portfolio {
   color: var(--current-color);
 }
 
@@ -471,8 +471,8 @@ li {
 .tim-item {
   background: var(--main-light-color);
 
-  box-shadow: 0px 1px 3px var(--box-shadow-item-12), 0px 1px 1px var(--box-shadow-item-14),
-    0px 2px 1px var(--box-shadow-item-02);
+  box-shadow: 0px 1px 3px var(--box-shadow-item-12),
+    0px 1px 1px var(--box-shadow-item-14), 0px 2px 1px var(--box-shadow-item-02);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -557,7 +557,7 @@ li {
   color: var(--current-color);
   font-size: 26px;
   line-height: 1.2;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -568,7 +568,7 @@ li {
   color: var(--main-light-color);
   font-size: 26px;
   line-height: 1.2;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Фон футера */
