@@ -1,0 +1,658 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Roboto', sans-serif;
+
+  /* Colors */
+  --main-color: #212121;
+  --main-light-color: #ffffff;
+  --current-color: #2196f3;
+  --secondary-color: #757575;
+  --footer-color: #2f303a;
+  --button-color: #f5f4fa;
+  --footer-info-color: rgba(255, 255, 255, 0.6);
+  --button-hero-bg-color: #188ce8;
+  --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
+  --header-border: #ececec;
+  --Complementary-2-color: #000000;
+  --border-box-gallery: #eeeeee;
+  --hero-section: #c4c4c4;
+  --icon-social-network: #afb1b8;
+  --footer-social-network: rgba(255, 255, 255, 0.1);
+  --footer-icon-social: rgba(255, 255, 255, 1);
+  --article-gallery-12: rgba(0, 0, 0, 0.12);
+  --article-gallery-06: rgba(0, 0, 0, 0.06);
+  --article-gallery-16: rgba(0, 0, 0, 0.16);
+  --background-image-hero-04: rgba(47, 48, 58, 0.4);
+  --box-shadow-item-12: rgba(0, 0, 0, 0.12);
+  --box-shadow-item-14: rgba(0, 0, 0, 0.14);
+  --box-shadow-item-02: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+address {
+  /* Убрать в футере курсив */
+  font-style: normal;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 4px; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Скрываем подчеркивание ссылок */
+
+a {
+  text-decoration: none;
+}
+
+/* Убираем маркеры */
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Глобальный border-box */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.header-studio {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--main-color);
+}
+
+.header-border {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.header-web {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--current-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* Скрываем h2 в index.html и h1 в portfolio.html */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Heder info  */
+
+.header-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  /* padding для кликабельности */
+}
+
+.header-info:hover,
+.header-info:focus {
+  color: var(--current-color);
+}
+
+.header-info-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* Hero-Section */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  color: var(--main-light-color);
+  /* Текс большими буквами */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* Hero-section */
+
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
+  background-size: cover;
+  margin: 0 auto;
+  background: var(--hero-section);
+  background-image: linear-gradient(
+      var(--background-image-hero-04),
+      var(--background-image-hero-04)
+    ),
+    url(../images/hero-section.jpg);
+}
+
+.total {
+  padding-top: 0%;
+}
+
+.section-title-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.hero-button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  padding: 10px 32px;
+  border: none;
+}
+
+.Our-features {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--footer-color);
+  /* Делает все буквы большими */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.box-advantages {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+  margin-bottom: 30px;
+
+  background: var(--button-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-advantages-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.section-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+
+.title-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--main-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.img-tile {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.foto-paragraph {
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+
+/* hover focus ссылок */
+
+.link:hover,
+.link:focus {
+  background-color: var(--current-color);
+  color: var(--current-color);
+
+  background-color: var(--main-light-color);
+}
+
+/* Ссылка хедера. */
+
+.list-header {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding для кликабельности */
+}
+
+/* Header телефон и ссылка через селектор соседа  */
+.contacts-header .item + .item {
+  margin-left: 50px;
+}
+
+/* Дефолтные параметры кнопки */
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+}
+
+/* Hover Focus Hero button */
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hero-bg-color);
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  border-radius: 4px;
+}
+
+/* hover focus button */
+
+.button:hover,
+.button:focus {
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+  box-shadow: 0px 1px 1px var(--article-gallery-12), 0px 4px 4px var(--article-gallery-06),
+    1px 4px 6px var(--article-gallery-16);
+}
+
+.button-section {
+  background: var(--button-color);
+  color: var(--main-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.gallery-box {
+  padding: 20px 24px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-color: var(--border-box-Gallery);
+  border-right-color: var(--border-box-Gallery);
+  border-left-color: var(--border-box-Gallery);
+}
+
+/* Ховер и фокус карточек на Портфолио */
+
+.gallery-link:hover,
+.gallery-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px var(--article-gallery-12), 0px 4px 4px var(--article-gallery-06),
+    1px 4px 6px var(--article-gallery-16);
+}
+
+/* Текст кнопок */
+
+.gallery-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Делает цвет синий в статическом состоянии */
+
+.a,
+.caren-portfolio {
+  color: var(--current-color);
+}
+
+/* Параграф ссылки*/
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+}
+
+/*Portfolio Section */
+
+.portfolio-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Заголовок ссылки */
+
+.list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+/* Наша команда заливка секции в серый цвет */
+.section-team {
+  background-color: var(--button-color);
+}
+
+/* Наша команда заливка карточек в белый цвет */
+
+.cards-team-box {
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Тень карточек команды */
+
+.team-item {
+  background: var(--main-light-color);
+
+  box-shadow: 0px 1px 3px var(--box-shadow-item-12), 0px 1px 1px var(--box-shadow-item-14),
+    0px 2px 1px var(--box-shadow-item-02);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Карточки команды */
+
+.icon-social-network {
+  height: 20px;
+  width: 20px;
+  /* fill: var(--icon-social-network); */
+  fill: currentColor;
+}
+
+.cards-social-network {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.link-social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: var(--main-light-color);
+  color: var(--icon-social-network);
+}
+
+.link-social-network:hover,
+.link-social-network:focus {
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+}
+
+.cards-team {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
+}
+/* Карточки команды */
+
+/* Постоянные клиенты */
+
+.box-section-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-social-network);
+  border-radius: 4px;
+  fill: currentColor;
+  color: var(--icon-social-network);
+}
+
+.link-icom-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.icom-company {
+  width: 106px;
+  height: 60px;
+  /* color: var(--icon-social-network); */
+  fill: currentColor;
+}
+
+.box-section-company:hover,
+.box-section-company:focus {
+  color: var(--current-color);
+  border-color: var(--current-color);
+}
+
+/* Постоянные клиенты */
+
+/* Footer Web */
+
+.footer-web {
+  color: var(--current-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Footer Studio */
+
+.footer-studio {
+  color: var(--main-light-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Фон футера */
+
+.footer {
+  background: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* info footer  */
+
+.footer-info {
+  color: var(--footer-info-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+/* Ссылка address footer */
+
+.link-address {
+  color: var(--main-light-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Список социальных сетей в footer */
+
+.title-footer {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-social-network {
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer-address-box {
+  margin-right: 70px;
+}
+
+.footer-container-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-social-network);
+}
+
+.footer-icon-social {
+  height: 20px;
+  width: 20px;
+  fill: var(--footer-icon-social);
+}
+
+.footer-social-network:hover,
+.footer-social-network:focus {
+  background-color: var(--current-color);
+}
+
+/* Hover footer address  */
+
+.footer-info:hover,
+.footer-info:focus,
+.link-address:hover,
+.link-address:focus {
+  color: var(--current-color);
+}
