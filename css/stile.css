@@ -14,10 +14,10 @@
   --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
   --header-border: #ececec;
   --Complementary-2-color: #000000;
-  --border-box-gallery: #eeeeee;
+  --border-box-Gallery: #eeeeee;
   --hero-section: #c4c4c4;
   --icon-social-network: #afb1b8;
-  --footer-social-network: rgba(255, 255, 255, 0.1);
+  --futer-social-network: rgba(255, 255, 255, 0.1);
   --footer-icon-social: rgba(255, 255, 255, 1);
   --article-gallery-12: rgba(0, 0, 0, 0.12);
   --article-gallery-06: rgba(0, 0, 0, 0.06);
@@ -160,7 +160,7 @@ li {
 
 /* Heder info  */
 
-.header-info {
+.heder-info {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -173,12 +173,12 @@ li {
   /* padding для кликабельности */
 }
 
-.header-info:hover,
-.header-info:focus {
+.heder-info:hover,
+.heder-info:focus {
   color: var(--current-color);
 }
 
-.header-info-icon {
+.heder-info-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -214,7 +214,7 @@ li {
       var(--background-image-hero-04),
       var(--background-image-hero-04)
     ),
-    url(../images/hero-section.jpg);
+    url(../img/hero/hero-section.jpg);
 }
 
 .total {
@@ -384,14 +384,14 @@ li {
   margin-bottom: 50px;
 }
 
-.gallery {
+.Gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.gallery-box {
+.Gallery-box {
   padding: 20px 24px;
   border-bottom-width: 1px;
   border-right-width: 1px;
@@ -415,7 +415,7 @@ li {
 
 /* Текст кнопок */
 
-.gallery-text {
+.Gallery-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -423,7 +423,7 @@ li {
 
 /* Делает цвет синий в статическом состоянии */
 
-.a,
+.caren-studio,
 .caren-portfolio {
   color: var(--current-color);
 }
@@ -468,7 +468,7 @@ li {
 
 /* Тень карточек команды */
 
-.team-item {
+.tim-item {
   background: var(--main-light-color);
 
   box-shadow: 0px 1px 3px var(--box-shadow-item-12), 0px 1px 1px var(--box-shadow-item-14),
@@ -526,7 +526,6 @@ li {
   height: 92px;
   border: 1px solid var(--icon-social-network);
   border-radius: 4px;
-  fill: currentColor;
   color: var(--icon-social-network);
 }
 
@@ -627,14 +626,14 @@ li {
   align-items: baseline;
 }
 
-.footer-social-network {
+.futer-social-network {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-color: var(--footer-social-network);
+  background-color: var(--futer-social-network);
 }
 
 .footer-icon-social {
@@ -643,8 +642,8 @@ li {
   fill: var(--footer-icon-social);
 }
 
-.footer-social-network:hover,
-.footer-social-network:focus {
+.futer-social-network:hover,
+.futer-social-network:focus {
   background-color: var(--current-color);
 }
 
