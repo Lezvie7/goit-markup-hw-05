@@ -19,13 +19,13 @@
   --icon-social-network: #afb1b8;
   --footer-social-list: rgba(255, 255, 255, 0.1);
   --footer-icon-social: rgba(255, 255, 255, 1);
-  --article-gallery-12: rgba(0, 0, 0, 0.12);
-  --article-gallery-06: rgba(0, 0, 0, 0.06);
-  --article-gallery-16: rgba(0, 0, 0, 0.16);
   --background-image-hero-04: rgba(47, 48, 58, 0.4);
   --box-shadow-item-12: rgba(0, 0, 0, 0.12);
   --box-shadow-item-14: rgba(0, 0, 0, 0.14);
   --box-shadow-item-02: rgba(0, 0, 0, 0.2);
+  --shadow-cards-gallery-12: rgba(0, 0, 0, 0.12);
+  --shadow-cards-gallery-06: rgba(0, 0, 0, 0.06);
+  --shadow-cards-gallery-16: rgba(0, 0, 0, 0.16);
 }
 
 body {
@@ -171,6 +171,7 @@ li {
   padding-bottom: 32px;
   align-items: center;
   /* padding для кликабельности */
+  fill: currentColor;
 }
 
 .header-info:hover,
@@ -180,7 +181,6 @@ li {
 
 .header-info-icon {
   margin-right: 10px;
-  fill: currentColor;
 }
 
 /* Hero-Section */
@@ -366,8 +366,9 @@ li {
 .button:focus {
   background-color: var(--current-color);
   color: var(--main-light-color);
-  box-shadow: 0px 1px 1px var(--article-gallery-12),
-    0px 4px 4px var(--article-gallery-06), 1px 4px 6px var(--article-gallery-16);
+  box-shadow: 0px 1px 1px var(--shadow-cards-gallery-12),
+    0px 4px 4px var(--shadow-cards-gallery-06),
+    1px 4px 6px var(--shadow-cards-gallery-16);
 }
 
 .button-section {
@@ -393,15 +394,8 @@ li {
 
 .gallery-box {
   padding: 20px 24px;
-  border-bottom-width: 1px;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-bottom-color: var(--border-box-gallery);
-  border-right-color: var(--border-box-gallery);
-  border-left-color: var(--border-box-gallery);
+  border: 1px solid var(--border-box-gallery);
+  border-top: none;
 }
 
 /* Ховер и фокус карточек на Портфолио */
@@ -409,8 +403,9 @@ li {
 .gallery-link:hover,
 .gallery-link:focus {
   display: block;
-  box-shadow: 0px 1px 1px var(--article-gallery-12),
-    0px 4px 4px var(--article-gallery-06), 1px 4px 6px var(--article-gallery-16);
+  box-shadow: 0px 1px 1px var(--shadow-cards-gallery-12),
+    0px 4px 4px var(--shadow-cards-gallery-06),
+    1px 4px 6px var(--shadow-cards-gallery-16);
 }
 
 /* Текст кнопок */
@@ -481,7 +476,6 @@ li {
 .icon-social-network {
   height: 20px;
   width: 20px;
-  /* fill: var(--icon-social-network); */
   fill: currentColor;
 }
 
