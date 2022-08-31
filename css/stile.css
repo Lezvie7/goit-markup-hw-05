@@ -252,11 +252,14 @@ li {
   border: none;
 }
 
+/* Преимущества */
+
 .our-features {
   display: flex;
   gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
+/* Преимущества */
 
 .section-title {
   font-weight: 700;
