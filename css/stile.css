@@ -17,7 +17,7 @@
   --border-box-gallery: #eeeeee;
   --hero-section: #c4c4c4;
   --icon-social-network: #afb1b8;
-  --futer-social-network: rgba(255, 255, 255, 0.1);
+  --footer-social-list: rgba(255, 255, 255, 0.1);
   --footer-icon-social: rgba(255, 255, 255, 1);
   --article-gallery-12: rgba(0, 0, 0, 0.12);
   --article-gallery-06: rgba(0, 0, 0, 0.06);
@@ -626,25 +626,25 @@ li {
   align-items: baseline;
 }
 
-.futer-social-network {
+.footer-social-list {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-color: var(--futer-social-network);
+  background-color: var(--footer-social-list);
+}
+
+.footer-social-list:hover,
+.footer-social-list:focus {
+  background-color: var(--current-color);
 }
 
 .footer-icon-social {
   height: 20px;
   width: 20px;
   fill: var(--footer-icon-social);
-}
-
-.futer-social-network:hover,
-.futer-social-network:focus {
-  background-color: var(--current-color);
 }
 
 /* Hover footer address  */
@@ -655,3 +655,7 @@ li {
 .link-address:focus {
   color: var(--current-color);
 }
+
+/* NEW .footer-social-list */
+
+/* futer-social-network */
