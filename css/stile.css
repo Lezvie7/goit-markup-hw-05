@@ -11,9 +11,9 @@
   --button-color: #f5f4fa;
   --footer-info-color: rgba(255, 255, 255, 0.6);
   --button-hero-bg-color: #188ce8;
-  --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
+  --hero-shadow-button-color: rgba(0, 0, 0, 0.15);
   --header-border: #ececec;
-  --Complementary-2-color: #000000;
+  --complementary-2-color: #000000;
   --border-box-gallery: #eeeeee;
   --hero-section: #c4c4c4;
   --icon-social-network: #afb1b8;
@@ -128,6 +128,14 @@ li {
   color: var(--main-color);
 }
 
+/* Hover Focus Studio Header*/
+
+.header-studio:hover,
+.header-studio:focus {
+  color: var(--current-color);
+}
+/* Hover Focus Studio Heafer */
+
 .header-border {
   border-bottom: 1px solid var(--header-border);
 }
@@ -239,12 +247,12 @@ li {
   background-color: var(--current-color);
   color: var(--main-light-color);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
   padding: 10px 32px;
   border: none;
 }
 
-.Our-features {
+.our-features {
   display: flex;
   gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
@@ -356,7 +364,7 @@ li {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-hero-bg-color);
-  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
   border-radius: 4px;
 }
 
@@ -565,6 +573,15 @@ li {
   font-family: "Raleway", sans-serif;
 }
 
+/* Hover Focus Studio Footer */
+
+.footer-studio:hover,
+.footer-studio:focus {
+  color: var(--current-color);
+}
+
+/* Hover Focus Studio Footer */
+
 /* Фон футера */
 
 .footer {
@@ -649,7 +666,3 @@ li {
 .link-address:focus {
   color: var(--current-color);
 }
-
-/* NEW .footer-social-list */
-
-/* futer-social-network */
