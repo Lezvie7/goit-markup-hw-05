@@ -26,6 +26,8 @@
   --shadow-cards-gallery-12: rgba(0, 0, 0, 0.12);
   --shadow-cards-gallery-06: rgba(0, 0, 0, 0.06);
   --shadow-cards-gallery-16: rgba(0, 0, 0, 0.16);
+  /* --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-func: 250ms linear; */
 }
 
 body {
@@ -180,6 +182,7 @@ li {
   align-items: center;
   /* padding для кликабельности */
   fill: currentColor;
+  /* transition: var(--transition-dur-and-func); */
 }
 
 .header-info:hover,
@@ -236,6 +239,34 @@ li {
   flex-basis: calc((100% - 60px) / 3);
 }
 
+/* Чем мы занимаемся position: absolute */
+
+.title-work-box {
+  position: relative;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.thumb-description {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+}
+
+/* Чем мы занимаемся position: absolute */
+
 .hero-button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -251,6 +282,24 @@ li {
   padding: 10px 32px;
   border: none;
 }
+
+/* Модалка по клику на кнопку Героя */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  width: 528px;
+  height: 580px;
+  background-color: var(--main-light-color);
+}
+/* Модалка по клику на кнопку Героя */
 
 /* Преимущества */
 
@@ -333,6 +382,8 @@ li {
 /* Ссылка хедера. */
 
 .list-header {
+  position: relative;
+
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
@@ -427,11 +478,35 @@ li {
   line-height: 1.6;
 }
 
+/* .gallery-overley {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 99, 71.05);
+} */
+
 /* Делает цвет синий в статическом состоянии */
 
 .current-studio,
 .current-portfolio {
   color: var(--current-color);
+}
+
+/* Подчеркивание текущей страницы */
+
+.current-studio::before,
+.current-portfolio::before {
+  position: absolute;
+
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--current-color);
+  border-radius: 2px;
 }
 
 /* Параграф ссылки*/
