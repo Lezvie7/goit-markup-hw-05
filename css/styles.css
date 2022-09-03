@@ -27,8 +27,7 @@
   --shadow-cards-gallery-06: rgba(0, 0, 0, 0.06);
   --shadow-cards-gallery-16: rgba(0, 0, 0, 0.16);
   --gallery-overley-text: rgba(33, 150, 243, 0.9);
-  /* --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-dur-and-func: 250ms linear; */
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -129,6 +128,7 @@ li {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   color: var(--main-color);
+  transition: color var(--transition-dur-and-func);
 }
 
 /* Hover Focus Studio Header*/
@@ -184,6 +184,7 @@ li {
   /* padding для кликабельности */
   fill: currentColor;
   /* transition: var(--transition-dur-and-func); */
+  transition: color var(--transition-dur-and-func);
 }
 
 .header-info:hover,
@@ -282,6 +283,7 @@ li {
   box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
   padding: 10px 32px;
   border: none;
+  transition: color var(--transition-dur-and-func);
 }
 
 /* Модалка по клику на кнопку Героя */
@@ -293,7 +295,8 @@ li {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms ease, visibility 250ms ease;
+  transition: opacity var(--transition-dur-and-func);
+  visibility: var(--transition-dur-and-func);
 }
 
 .modal {
@@ -420,6 +423,7 @@ li {
   padding-top: 32px;
   padding-bottom: 32px;
   /* padding для кликабельности */
+  transition: color var(--transition-dur-and-func);
 }
 
 /* Header телефон и ссылка через селектор соседа  */
@@ -465,6 +469,7 @@ li {
   color: var(--main-color);
   padding: 6px 22px;
   border-radius: 4px;
+  transition: color var(--transition-dur-and-func);
 }
 
 .button-box {
@@ -518,14 +523,14 @@ li {
   overflow: auto;
   line-height: 1.5;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-dur-and-func);
   background-color: var(--gallery-overley-text);
   color: var(--main-light-color);
 }
 
 .gallery-link:hover .gallery-overley-text,
 .gallery-link:focus .gallery-overley-text {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 
 /* Overley карточки портфолио */
@@ -537,14 +542,6 @@ li {
   font-size: 16px;
   line-height: 1.6;
 }
-
-/* .gallery-overley {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 99, 71.05);
-} */
 
 /* Делает цвет синий в статическом состоянии */
 
@@ -640,6 +637,7 @@ li {
   border-radius: 50%;
   background-color: var(--main-light-color);
   color: var(--icon-social-network);
+  transition: color var(--transition-dur-and-func);
 }
 
 .link-social-network:hover,
@@ -674,6 +672,7 @@ li {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+  transition: color var(--transition-dur-and-func);
 }
 
 .icom-company {
@@ -681,6 +680,7 @@ li {
   height: 60px;
   /* color: var(--icon-social-network); */
   fill: currentColor;
+  transition: color var(--transition-dur-and-func);
 }
 
 .box-section-company:hover,
@@ -709,6 +709,7 @@ li {
   font-size: 26px;
   line-height: 1.2;
   font-family: "Raleway", sans-serif;
+  transition: color var(--transition-dur-and-func);
 }
 
 /* Hover Focus Studio Footer */
@@ -734,6 +735,7 @@ li {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+  transition: color var(--transition-dur-and-func);
 }
 
 .footer-item {
@@ -747,6 +749,7 @@ li {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  transition: color var(--transition-dur-and-func);
 }
 
 /* Список социальных сетей в footer */
@@ -783,6 +786,7 @@ li {
   width: 44px;
   border-radius: 50%;
   background-color: var(--footer-social-list);
+  transition: color var(--transition-dur-and-func);
 }
 
 .footer-social-list:hover,
